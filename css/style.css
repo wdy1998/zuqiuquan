@@ -1,0 +1,148 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+ul,ol,li{
+	list-style: none;
+}
+a,u{
+	text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:16px;
+	font-weight:100;
+}
+i,em{
+	font-style:normal;
+}
+b,strong{
+	font-weight:100;
+}
+img{
+	border:0;
+	display:block;
+}
+
+
+
+
+
+body{
+	display:flex;
+	flex-direction:column;
+}
+html,body{
+	height:100%;
+}
+/*header*/
+header{
+	height:3.67rem;
+	background:#0dc441;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+header a{
+	display:block;
+	width:5.04rem;
+	height:2rem;
+	background: #64d985;
+	font-size:1rem;
+	text-align: center;
+	line-height: 2rem;
+}
+header a:nth-child(1){
+	color:white;
+	border-radius: 1rem 0 0 1rem;
+}
+header a:nth-child(2){
+	color:#a3e9b7;
+	background:#3dd067;
+	border-radius: 0 1rem 1rem 0
+
+}
+/*nav*/
+nav{
+	height:2.96rem;
+	border-bottom:1px solid #d9d9d9;
+	display:flex;
+	/*justify-content: space-around;
+	align-items: center;*/
+}
+nav li{
+	flex:1;
+	text-align: center;
+	height:2.96rem;
+	line-height: 2.96rem;
+	font-size:1.17rem;
+	color:#666;
+}
+nav li:nth-child(1){
+	border-bottom:3px solid #0dc441;
+	color:#0dc441;
+}
+/*main*/
+main{
+	flex:1;
+	overflow: auto;
+}
+
+section figure{
+	width:50%;
+	border:1px solid #e5e5e5;
+	margin-top:0.33rem;
+}
+section figure img{
+	width:100%;
+}
+section figcaption{
+	height: 2.46rem;
+	text-align: center;
+	line-height: 2.46rem;
+	border-bottom:1px solid #e5e5e5;
+	font-size:1rem;
+	color:green;
+}
+section{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;	
+}
+/*footer*/
+footer{
+	height:3.625rem;
+	padding:0 1.25rem;
+	display: flex;
+	justify-content:space-between;
+}
+footer div{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: center;
+}
+footer div i{
+	font-size:1.33rem!important;
+	color:black;
+}
+footer div span{
+	font-size: 1rem;
+	color:black;
+}
+/*
+用图片做定位
+footer div:nth-child(3){
+	width:4.375rem;
+	position:relative;
+}
+footer div:nth-child(3) img{
+	width:100%;
+	position:absolute;
+	bottom:0;
+};
+
+
+*/
+
